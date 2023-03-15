@@ -9,8 +9,6 @@ const HandleLogin = (e) => {
     const [error, setError] = useState(false);
     const setAuth = useSetRecoilState(auth);
 
-    // Reminder
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
