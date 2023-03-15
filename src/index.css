@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 1;
+    font-size: 1rem;
+    color: #000;
+    width: 100%;
+    height: 100vh;
+    padding: 2.4rem 4.4rem;
+    background-image: linear-gradient(
+        to right top,
+        #051937,
+        #004d7a,
+        #008793,
+        #00bf72,
+        #a8eb12
+    );
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1.2rem;
+    width: 40%;
+}
+
+.container form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+input {
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    border: none;
+    width: 100%;
+}
+
+.container form div label {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.dashboard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.dashboard h1 {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: -0.5px;
+    font-size: 3.6rem;
+}
+
+.dashboard span {
+    background: -webkit-linear-gradient(#a8eb12, #00bf72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-full {
+    width: 100%;
+}
+
+.msg {
+    margin-top: -0.2rem;
+    color: #fff;
+}
+
+.msg span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.a1 {
+    background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    position: relative;
+    border: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.4rem;
+    transition: 0.4s;
+    margin-top: 0.4rem;
+}
+.a1:hover {
+    animation: a 8s linear Infinite;
+    padding: 0.6rem 1.6rem;
+}
+.a1:before {
+    content: "";
+    background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: 0px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: 0.4s;
+}
+.a1:hover:before {
+    opacity: 1;
+    filter: blur(1rem);
+    animation: a 8s linear Infinite;
+}
+@keyframes a {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.container h2 {
+    color: #fff;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.redflag {
+    color: rgb(241, 69, 69);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-top: -0.6rem;
+}
