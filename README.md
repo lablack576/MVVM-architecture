@@ -4,7 +4,7 @@ Model-View-ViewModel (MVVM) is a software design pattern that is structured to s
 
 In this example we're applying it to a web application created using React JS - Node JS - Express - postGreSQL, try it out !
 
-1. Create & connect to your postGreSQL database with utilisateurs table
+1. Create & connect to your postGreSQL database adding utilisateurs table
 
 2. Launch Express JS server using :
 
